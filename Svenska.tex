@@ -26,7 +26,7 @@
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{D}{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{1.51cm}}
 
-
+\usepackage{tabu}	%For distributing remaining tab space evenly
 
 %FONTS
 \defaultfontfeatures{Mapping=tex-text}
@@ -106,7 +106,7 @@ ItalicFont = Fontin-Italic.otf
 \end{tabular}
 
 \section{Mål}
-{\small Mitt huvudsakliga mål i karriären är att lära mig. Jag vill bli utmanad på ett sätt som tvingar mig att lära mig nya saker och tänka i nya banor. Jag vill bli den bästa i mitt fält och vara med att skapa felfria och perfekta lösningar!}
+{\small Mitt huvudsakliga mål i karriären är att lära mig. Jag vill bli utmanad på ett sätt som tvingar mig att lära mig nya saker och tänka i nya banor. Jag vill bli den bästa i mitt område och vara med att skapa felfria och perfekta lösningar!}
 %{\small The main goal in my career is to learn. I want to be challenged in a way that forces me to learn new things and think in new ways. I want to become the best in my field at what I do, and I want to be a part of creating flawless and perfect solutions!}
 
 %Section: Education
@@ -114,7 +114,7 @@ ItalicFont = Fontin-Italic.otf
 \begin{tabular}{D L {\textwidth - 2.7cm}}
 \textsc{Jun 2018}	&	\textbf{Datateknik Civilingenjör}\\
 \textsc{Aug 2012}	&	 \emph{Informations- and Kommunikationsteknik}. Luleå Tekniska Universitet.\\
-			&	{\small Fokus på algoritmer, Design paradigmer, hög nivå av abstraktion, nätverk, och internet tjänster och utveckling.}
+			&	{\small Fokus på algoritmer, Design paradigmer, hög nivå av abstraktion, nätverk, och internettjänster och utveckling.}
 \end{tabular}
 
 
@@ -123,11 +123,11 @@ ItalicFont = Fontin-Italic.otf
 \begin{tabular}{D L {\textwidth - 2.7cm}}
  \emph{Nu} 	& 	\textbf{Brand Ambassador}	\\
  \textsc{Mar 2015}	&	Academic Work			\\
- 			&	{\small Ansiktet utåt för Academic Work,  arbetar för att upprätthålla märket ``Academic Work ''och ``Home of the Young Professional'' gentemot studenter. Yrket kräver att prata utan förhinder med främlingar och kollegor, att både jobba tätt i grupp och väldigt självständigt, samt att alltid uppträda professionellt.}	\\
+ 			&	{\small Ansiktet utåt för Academic Work,  arbetar för att upprätthålla märket ``Academic Work ''och ``Home of the Young Professional'' gentemot studenter. Yrket kräver att kommunicera utan förhinder med kunder och kollegor, att både jobba tätt i grupp och väldigt självständigt, samt att alltid uppträda professionellt.}	\\
 			&						\\
 \emph{Nu}	&	\textbf{Bolagsman, Delägare}		\\
 \textsc{Sep 2013}	&	DC Technological Innovations HB	\\
- 			&	{\small Ett företag skapat i försök att bringa crypto-valutan Bitcoin till universitetet och göra den till den dominerande betalningsmedlet på campus. Numer vilande.}					\\
+ 			&	{\small Ett företag bildat i försök att bringa crypto-valutan Bitcoin till universitetet och göra den till den dominerande betalningsmedlet på campus. Numer vilande.}					\\
  			&						\\
 \textsc{Aug 2016}	&	\textbf{Junior Utvecklare}		\\
 \textsc{Jun 2016}	&	isMobile				\\
@@ -145,13 +145,14 @@ ItalicFont = Fontin-Italic.otf
 \end{tabular}
 
 \section{Datorkunskap}
-\begin{tabular}{rl}
-\textsc{Traditionella Språk:}		&	C/++/\#, Java, Python\\
-\textsc{Webbutveckling:}		&	 HTML, JavaScript,  PHP, MySQL, CSS\\
-\textsc{Övrigt:}				& 	LaTeX, XML, XSLT, JSON, Git\\
-\textsc{Miljöer:}			&	Android, Unity, 3ds Max, Office\\
-\textsc{Rört vid: }			&	Go!, Prolog, Haskell, Assembly, VHDL
-\end{tabular}
+\def\arraystretch{1.2}%  1 is the default, change whatever you need
+\begin{tabu}to \textwidth{r X[c] X[c] X[c] X[c] X[c]}
+\textsc{Traditionella Språk:}	&	C/++/\#	&	 Java		&	Python	&			&		\\
+\textsc{Webbutveckling:}		&	 HTML		& 	JavaScript	&	PHP		&	MySQL	& 	CSS	\\
+\textsc{Övrigt:}			& 	LaTeX		&	XML		&	XSLT		&	JSON		&	 Git	\\
+\textsc{Miljöer:}			&	Android	& 	Unity		&	3ds Max	&	Office		&		\\
+\textsc{Rört vid: }			&	Go!		&	 Prolog	&	Haskell	&	Assembly	&	 VHDL
+\end{tabu}
 \\[0.3cm]
 
 \centering\textsc{ Referenser lämnas på begäran}

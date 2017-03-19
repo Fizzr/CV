@@ -26,7 +26,7 @@
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{D}{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{1.51cm}}
 
-
+\usepackage{tabu} %For allocating remaining column space evenly
 
 %FONTS
 \defaultfontfeatures{Mapping=tex-text}
@@ -144,13 +144,14 @@ ItalicFont = Fontin-Italic.otf
 \end{tabular}
 
 \section{Computer Skills}
-\begin{tabular}{rl}
-\textsc{ Traditional Languages:}		&	C/++/\#, Java, Python\\
-\textsc{Web Development:}		&	 HTML, JavaScript,  PHP, MySQL, CSS\\
-\textsc{Other:}				& 	LaTeX, XML, XSLT, JSON, Git\\
-\textsc{Environments:}			&	Android, Unity, 3ds Max, Office\\
-\textsc{Touched on: }			&	Go!, Prolog, Haskell, Assembly, VHDL
-\end{tabular}
+\def\arraystretch{1.2}%  1 is the default, change whatever you need
+\begin{tabu}to \textwidth{r X[c] X[c] X[c] X[c] X[c]}
+\textsc{Traditional Languages:}		&	C/++/\#	&	 Java		&	Python	&			&		\\
+\textsc{Web Development:}		&	 HTML		& 	JavaScript	&	PHP		&	MySQL	& 	CSS	\\
+\textsc{Other:}				& 	LaTeX		&	XML		&	XSLT		&	JSON		&	 Git	\\
+\textsc{Environments:}			&	Android	& 	Unity		&	3ds Max	&	Office		&		\\
+\textsc{Touched on: }			&	Go!		&	 Prolog	&	Haskell	&	Assembly	&	 VHDL
+\end{tabu}
 \\[0.3cm]
 
 \centering\textsc{ References left on request}
