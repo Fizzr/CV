@@ -54,40 +54,13 @@ ItalicFont = Fontin-Italic.otf
 \addtolength{\voffset}{-0.4cm}
 
 
-
-%Italian hyphenation for the word: ''corporations''
-\hyphenation{im-pre-se}
-
-%-------------WATERMARK TEST [**not part of a CV**]---------------
-%\usepackage[absolute]{textpos}
-
-%\setlength{\TPHorizModule}{30mm}
-%\setlength{\TPVertModule}{\TPHorizModule}
-%\textblockorigin{2mm}{0.65\paperheight}
-%\setlength{\parindent}{0pt}
-
 %--------------------BEGIN DOCUMENT----------------------
 \begin{document}
 
-%WATERMARK TEST [**not part of a CV**]---------------
-%\font\wm=''Baskerville:color=787878'' at 8pt
-%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
-%{\wm 
-%	\begin{textblock}{1}(0,0)
-%		\rotatebox{-90}{\parbox{500mm}{
-%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
-%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
-%		}
-%	}
-%	\end{textblock}
-%}
-
 \pagestyle{empty} % non-numbered pages
 
-\font\fb=''[cmr10]'' %for use with \LaTeX command
-
 %--------------------TITLE-------------
-{  \Huge \namefont {\fontsize{35}{0}\namefont C}LAES {\fontsize{35}{0}\namefont A}NDERSSON} \bigskip\par
+{  \Huge \namefont {\fontsize{35}{0}\namefont C}LAES {\fontsize{35}{0}\namefont A}NDERSSON} \bigskip%\par
 
 %--------------------SECTIONS-----------------------------------
 %Section: Personal Data
@@ -101,12 +74,12 @@ ItalicFont = Fontin-Italic.otf
     \textsc{Address:}	&	 Vänortsvägen 5, Luleå, Sweden \\
     \textsc{Phone:}		&	 +46 73 763 87 77\\
     \textsc{email:}		&	 \href{mailto:Claes.Gustaf.Andersson@gmail.com}{Claes.Gustaf.Andersson@gmail.com}\\
-    \textsc{Linkedin:}	&	 \url{se.linkedin.com/in/ClaesGustaf} \\
+    \textsc{Linkedin:}	&	 \href{https://linkedin.com/in/ClaesGustaf}{linkedin.com/in/ClaesGustaf} \\
     \textsc{GitHub:}		&	 \href{https://github.com/Fizzr}{GitHub.com/Fizzr}
 \end{tabular}
 
-\section{Goal}
-{\small The main goal in my career is to learn. I want to be challenged in a way that forces me to learn new things and think in new ways. I want to become the best in my field at what I do, and I want to be a part of creating flawless and perfect solutions!}
+%\section{Goal}
+%{\small The main goal in my career is to learn. I want to be challenged in a way that forces me to learn new things and think in new ways. I want to become the best in my field at what I do, and I want to be a part of creating flawless and perfect solutions!}
 
 %Section: Education
 \section{Education}
@@ -122,15 +95,25 @@ ItalicFont = Fontin-Italic.otf
 \begin{tabular}{D L {\textwidth - 2.7cm}}
  \emph{Current} 	& 	\textbf{Brand Ambassador}	\\
  \textsc{Mar 2015}	&	Academic Work			\\
- 			&	{\small Tasked with maintaining and promoting the brand ``Academic Work'' and slogan ``Home of the Young Professional'' on campus. A job requiring effortless socializing with both strangers and colleagues, independent effort but also to be able to work together in tight groups, and to always appear professionally.}	\\
-			&						\\
+ 			&	{\small As Brand Ambassador I participate in different events and career fairs to recruit candidates as well as strengthening the Academic Work brand. The job requires good skills in communication. Work task include
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+	\item Networking
+	\item Sales
+	\item Recruitment
+\end{itemize}
+} 	\\		
+
+
 \emph{Current}	&	\textbf{Co-founder}		\\
 \textsc{Sep 2013}	&	DC Technological Innovations HB	\\
  			&	{\small A company created in attempts to bring the crypto-currency Bitcoin to our university and make it the dominant payment method within campus. Now mostly idle.  }					\\
  			&						\\
 \textsc{Aug 2016}	&	\textbf{Junior Developer}		\\
 \textsc{Jun 2016}	&	isMobile				\\
-			&	{\small Worked as a consultant through Academic Work. Worked with developing a demo suite for their Android Application Module. Worked primarily in XSLT, HTML, JavaScript and Java}	\\
+			&	{\small Worked as a consultant through Academic Work. Worked with developing a demo suite for their Android Application Module. Worked primarily in XSLT, HTML, JavaScript, Java and LaTeX}	\\
 			
 
 \end{tabular}
@@ -144,7 +127,7 @@ ItalicFont = Fontin-Italic.otf
 \end{tabular}
 
 \section{Computer Skills}
-\def\arraystretch{1.2}%  1 is the default, change whatever you need
+\def\arraystretch{1.2}%  Vertical space between tabs. 1 is the default
 \begin{tabu}to \textwidth{r X[c] X[c] X[c] X[c] X[c]}
 \textsc{Traditional Languages:}		&	C/++/\#	&	 Java		&	Python	&			&		\\
 \textsc{Web Development:}		&	 HTML		& 	JavaScript	&	PHP		&	MySQL	& 	CSS	\\
@@ -154,6 +137,6 @@ ItalicFont = Fontin-Italic.otf
 \end{tabu}
 \\[0.3cm]
 
-\centering\textsc{ References left on request}
+\centering\textsc{ References available upon request}
 
 \end{document}
