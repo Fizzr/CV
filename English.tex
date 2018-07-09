@@ -6,10 +6,11 @@
 \usepackage{marvosym}
 \usepackage{fontspec} 					%for loading fonts
 \usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
-\RequirePackage{color,graphicx}
+\usepackage{color,graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage[big]{layaureo} 				%better formatting of the A4 page
-% an alternative to Layaureo can be ** \usepackage{fullpage} **
+% an alternative to Layaureo can be ** 
+%\usepackage{fullpage}
 \usepackage{supertabular} 				%for Grades
 \usepackage{titlesec}					%custom \section
 
@@ -56,87 +57,87 @@ ItalicFont = Fontin-Italic.otf
 
 %--------------------BEGIN DOCUMENT----------------------
 \begin{document}
+    
+    \pagestyle{empty} % non-numbered pages
+    
+    %--------------------TITLE-------------
+    {  \Huge \namefont {\fontsize{35}{0}\namefont C}LAES {\fontsize{35}{0}\namefont A}NDERSSON} %\bigskip%\par
+    
+    %--------------------SECTIONS-----------------------------------
+    %Section: Personal Data
+    \section{Personal Data}
+    
+    \begin{picture}(0,0) 
+        \put(272,-95.33){\hbox{\includegraphics[scale=0.4]{profile}}}
+    \end{picture}
+    
+    \begin{tabular}{Dl}
+        \textsc{Address:}	&	 Vänortsvägen 5, Luleå, Sweden \\
+        \textsc{Phone:}		&	 +46 73 763 87 77\\
+        \textsc{email:}		&	 \href{mailto:Claes.Gustaf.Andersson@gmail.com}{Claes.Gustaf.Andersson@gmail.com}\\
+        \textsc{Linkedin:}	&	 \href{https://linkedin.com/in/ClaesGustaf}{linkedin.com/in/ClaesGustaf} \\
+        \textsc{GitHub:}		&	 \href{https://github.com/Fizzr}{GitHub.com/Fizzr}
+    \end{tabular}
+    
+    %\section{Goal}
+    %{\small The main goal in my career is to learn. I want to be challenged in a way that forces me to learn new things and think in new ways. I want to become the best in my field at what I do, and I want to be a part of creating flawless and perfect solutions!}
+    
+    %Section: Education
+    \section{Education}
+    \begin{tabular}{D L {\textwidth - 2.7cm}}
+        \textsc{Jun 2019}	&	\textbf{Computer Engineering Master's Degree}\\
+        \textsc{Aug 2012}	&	 \emph{Information and Communication Technology}. Luleå Tekniska Universitet.\\
+        &	{\small Focus on Algorithms, Design paradigms, high levels of abstraction, Networking, and Internet services and development.}\\
+        
+        \emph{Ongoing} & \textbf{Master Thesis}\\
+        &                \small{\emph{A Decentralized Agent-based Decision Support System for Traffic Control in Underground Mines}, Luleå Tekniska Universitet, Mobilaris MCE}\\
+    \end{tabular}
+    
+    
+    %Section: Work Experience
+    \section{Work Experience}
+    \begin{tabular}{D L {\textwidth - 2.7cm}}
 
-\pagestyle{empty} % non-numbered pages
-
-%--------------------TITLE-------------
-{  \Huge \namefont {\fontsize{35}{0}\namefont C}LAES {\fontsize{35}{0}\namefont A}NDERSSON} \bigskip%\par
-
-%--------------------SECTIONS-----------------------------------
-%Section: Personal Data
-\section{Personal Data}
-
-\begin{picture}(0,0) 
-\put(272,-96){\hbox{\includegraphics[scale=0.4]{profile}}}
-\end{picture}
-
-\begin{tabular}{Dl}
-    \textsc{Address:}	&	 Vänortsvägen 5, Luleå, Sweden \\
-    \textsc{Phone:}		&	 +46 73 763 87 77\\
-    \textsc{email:}		&	 \href{mailto:Claes.Gustaf.Andersson@gmail.com}{Claes.Gustaf.Andersson@gmail.com}\\
-    \textsc{Linkedin:}	&	 \href{https://linkedin.com/in/ClaesGustaf}{linkedin.com/in/ClaesGustaf} \\
-    \textsc{GitHub:}		&	 \href{https://github.com/Fizzr}{GitHub.com/Fizzr}
-\end{tabular}
-
-%\section{Goal}
-%{\small The main goal in my career is to learn. I want to be challenged in a way that forces me to learn new things and think in new ways. I want to become the best in my field at what I do, and I want to be a part of creating flawless and perfect solutions!}
-
-%Section: Education
-\section{Education}
-\begin{tabular}{D L {\textwidth - 2.7cm}}
-\textsc{Jun 2018}	&	\textbf{Computer Engineering Master's Degree}\\
-\textsc{Aug 2012}	&	 \emph{Information and Communication Technology}. Luleå Tekniska Universitet.\\
-			&	{\small Focus on Algorithms, Design paradigms, high levels of abstraction, Networking, and Internet services and development.}
-\end{tabular}
-
-
-%Section: Work Experience
-\section{Work Experience}
-\begin{tabular}{D L {\textwidth - 2.7cm}}
- \emph{Current} 	& 	\textbf{Brand Ambassador}	\\
- \textsc{Mar 2015}	&	Academic Work			\\
- 			&	{\small As Brand Ambassador I participate in different events and career fairs to recruit candidates as well as strengthening the Academic Work brand. The job requires good skills in communication. Work task include
-\begin{itemize}
-\setlength{\itemsep}{0pt}
-\setlength{\parskip}{0pt}
-\setlength{\parsep}{0pt}
-	\item Networking
-	\item Sales
-	\item Recruitment
-\end{itemize}
-} 	\\		
-
-
-\emph{Current}	&	\textbf{Co-founder}		\\
-\textsc{Sep 2013}	&	DC Technological Innovations HB	\\
- 			&	{\small A company created in attempts to bring the crypto-currency Bitcoin to our university and make it the dominant payment method within campus. Now mostly idle.  }					\\
- 			&						\\
-\textsc{Aug 2016}	&	\textbf{Junior Developer}		\\
-\textsc{Jun 2016}	&	isMobile				\\
-			&	{\small Worked as a consultant through Academic Work. Worked with developing a demo suite for their Android Application Module. Worked primarily in XSLT, HTML, JavaScript, Java and LaTeX}	\\
-			
-
-\end{tabular}
-
-
-%Section: Languages
-\section{Languages}
-\begin{tabular}{Dl}
- \textsc{Swedish:}&Mother tongue\\
-\textsc{English:}&Fluent\\
-\end{tabular}
-
-\section{Computer Skills}
-\def\arraystretch{1.2}%  Vertical space between tabs. 1 is the default
-\begin{tabu}to \textwidth{r X[c] X[c] X[c] X[c] X[c]}
-\textsc{Traditional Languages:}		&	C/++/\#	&	 Java		&	Python	&			&		\\
-\textsc{Web Development:}		&	 HTML		& 	JavaScript	&	PHP		&	MySQL	& 	CSS	\\
-\textsc{Other:}				& 	LaTeX		&	XML		&	XSLT		&	JSON		&	 Git	\\
-\textsc{Environments:}			&	Android	& 	Unity		&	3ds Max	&	Office		&		\\
-\textsc{Touched on: }			&	Go!		&	 Prolog	&	Haskell	&	Assembly	&	 VHDL
-\end{tabu}
-\\[0.3cm]
-
-\centering\textsc{ References available upon request}
-
+        \emph{Current}	&	\textbf{Developer}		\\
+        \textsc{Jun 2017}	&	Mobilaris MCE	\\
+        &	{\small Started as a summer job developing a POC for a cross-platform mobile version of the existing underground positioning system. Running on native C++ on an Android tablet and using OpenGL the POC ran smoother and was more responsive than the existing desktop version. After the summer job and POC was completed the project was assigned a team of seven people, made into a product and considered the company's highest priority. I was kept on working part time while completing my studies. The same company where I conduct my Master Thesis.}\\
+        \\
+        
+        \emph{Current}	&	\textbf{Co-founder}		\\
+        \textsc{Sep 2013}	&	DC Technological Innovations HB	\\
+        &	{\small A company created in an attempt to bring Bitcoin to our university and make it the dominant payment method within campus. Now mostly idle.  }\\
+        \\
+        
+        \textsc{June 2017} 	& 	\textbf{Brand Ambassador}	\\
+        \textsc{Mar 2015}	&	Academic Work			\\
+        &	{\small Participating in different events and career fairs to recruit candidates. The job requires good skills in communication and teamwork. } 	\\
+        \\
+        
+        \textsc{Aug 2016}	&	\textbf{Junior Developer}		\\
+        \textsc{Jun 2016}	&	isMobile				\\
+        &	{\small Summer job. Worked with developing a demo suite for their Android Application Module. Primarily used XSLT, HTML, JavaScript, Java and LaTeX}	\\
+        
+        
+    \end{tabular}
+    
+    
+    %Section: Languages
+    \section{Languages}
+    \begin{tabular}{Dl}
+        \textsc{Swedish:}&Mother tongue\\
+        \textsc{English:}&Fluent\\
+    \end{tabular}
+    
+    \section{Computer Skills}
+    \def\arraystretch{1.2}%  Vertical space between tabs. 1 is the default
+    \begin{tabu}to \textwidth{r X[c] X[c] X[c] X[c] X[c]}
+        \textsc{Traditional Languages:}		&	C/++/\#   &   Java		&	Python	&   Go! &		\\
+        \textsc{Web Development:}		    &	 HTML     &   JavaScript&	PHP		&	MySQL    &  CSS	\\
+        \textsc{Other:}				        & 	LaTeX     &   Git	    &   Haskell &   Prolog   &  OpenGL	\\
+        \textsc{Environments:}		        &	Android   &   Unity		&	3ds Max	&	Unix     &		\\
+    \end{tabu}
+    \\[0.cm]
+    
+    \centering\textsc{ References available upon request}
+    
 \end{document}
