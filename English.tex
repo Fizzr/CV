@@ -1,6 +1,6 @@
 \documentclass[a4paper,10pt]{article}
 
-\usepackage[bottom=0.5cm]{geometry}
+\usepackage[bottom=0cm, top=2.1cm]{geometry}
 
 %A Few Useful Packages
 \usepackage{marvosym}
@@ -8,11 +8,9 @@
 \usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
 \usepackage{color,graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[big]{layaureo} 				%better formatting of the A4 page
-% an alternative to Layaureo can be ** 
-%\usepackage{fullpage}
 \usepackage{supertabular} 				%for Grades
 \usepackage{titlesec}					%custom \section
+\usepackage{calc} 						%Allow arithmetic arguments e.g. \textwidth + 1.5cm
 
 %Setup hyperref package, and colours for links
 \usepackage{hyperref}
@@ -42,35 +40,29 @@ ItalicFont = Fontin-Italic.otf
 
 \newfontfamily\namefont{Times New Roman}%Quattrocento-Regular.ttf}
 
-\usepackage{anyfontsize}	%set any font size (duh)
 
-%%%
-
-%CV Sections inspired by: 
-%http://stefano.italians.nl/archives/26
+%CV Sections inspired by:
+%http://stefano.italians.nl/archives/26 (dead link)
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{3pt}{3pt}
-
-%Tweak a bit the top margin
-\addtolength{\voffset}{-0.4cm}
 
 
 %--------------------BEGIN DOCUMENT----------------------
 \begin{document}
-	
+
 	\pagestyle{empty} % non-numbered pages
-	
+
 	%--------------------TITLE-------------
 	{  \Huge \namefont {\fontsize{35}{0}\namefont C}LAES {\fontsize{35}{0}\namefont A}NDERSSON} %\bigskip%\par
-	
+
 	%--------------------SECTIONS-----------------------------------
 	%Section: Personal Data
 	\section{Personal Data}
-	
-	\begin{picture}(0,0) 
+
+	\begin{picture}(0,0)
 		\put(272,-95.33){\hbox{\includegraphics[scale=0.4]{profile}}}
 	\end{picture}
-	
+
 	\begin{tabular}{Dl}
 		\textsc{Address:}	&	 Vänortsvägen 5, Luleå, Sweden \\
 		\textsc{Phone:}		&	 +46 73 763 87 77\\
@@ -78,65 +70,65 @@ ItalicFont = Fontin-Italic.otf
 		\textsc{Linkedin:}	&	 \href{https://linkedin.com/in/ClaesGustaf}{linkedin.com/in/ClaesGustaf} \\
 		\textsc{GitHub:}		&	 \href{https://github.com/Fizzr}{GitHub.com/Fizzr}
 	\end{tabular}
-	
+
 	%\section{Goal}
 	%{\small The main goal in my career is to learn. I want to be challenged in a way that forces me to learn new things and think in new ways. I want to become the best in my field at what I do, and I want to be a part of creating flawless and perfect solutions!}
-	
+
 	%Section: Education
 	\section{Education}
-	\begin{tabular}{D L {\textwidth - 2.7cm}}
-		\textsc{Jun 2019}	&	\textbf{Computer Engineering Master's Degree}\\
+	\begin{tabular}{D L{\textwidth-2.7cm}}
+		\textsc{Aug 2019}	&	\textbf{Computer Engineering Master's Degree}\\
 		\textsc{Aug 2012}	&	 \emph{Information and Communication Technology}. Luleå Tekniska Universitet.\\
 		&	{\small Focus on Algorithms, Design paradigms, high levels of abstraction, Networking, and Internet services and development.}\\
-		
-		\emph{Ongoing} & \textbf{Master Thesis}\\
-		&                \small{\emph{A Decentralized Agent-based Decision Support System for Traffic Control in Underground Mines}, Luleå Tekniska Universitet, Mobilaris MCE}\\
+
+		\textsc{Aug 2019} & \textbf{Master's Thesis}, \href{http://www.diva-portal.org/smash/record.jsf?pid=diva2%3A1350545}{Link}\\
+		&                \small{\emph{Predictive Model for Traffic Control in Underground Mines}, Luleå Tekniska Universitet, Mobilaris MCE}\\
 	\end{tabular}
-	
-	
+
+
 	%Section: Work Experience
 	\section{Work Experience}
 	\begin{tabular}{D L {\textwidth - 2.7cm}}
-		
-		\emph{Current}	&	\textbf{Developer}		\\
-		\textsc{Jun 2017}	&	Mobilaris MCE	\\
+
+		\emph{Current}	&	\textbf{Software Developer}		\\
+		\textsc{Jun 2017}	&	Mobilaris Mining and Civil Engineering	\\
 		&	{\small Started as a summer job developing a POC for a cross-platform mobile version of the existing underground positioning system. Running on native C++ on an Android tablet and using OpenGL the POC ran smoother and was more responsive than the existing desktop version. After the summer job and POC was completed the project was assigned a team of seven people, made into a product and considered the company's highest priority. I was kept on working part time while completing my studies. The same company where I conduct my Master Thesis.}\\
 		\\
-		
-		\emph{Current}	&	\textbf{Co-founder}		\\
+
+		\textsc{Oct 2018}	&	\textbf{Co-founder}		\\
 		\textsc{Sep 2013}	&	DC Technological Innovations HB	\\
-		&	{\small A company created in an attempt to bring Bitcoin to our university and make it the dominant payment method within campus. Now mostly idle.  }\\
+		&	{\small A company created in an attempt to bring Bitcoin to our university and make it the dominant payment method within campus.}\\
 		\\
-		
+
 		\textsc{Jun 2017} 	& 	\textbf{Brand Ambassador} \\
 		\textsc{Mar 2015}	&	Academic Work \\
-		&	{\small Participating in different events and career fairs to recruit candidates. The job requires good skills in communication and teamwork.}\\
+		&	{\small Participating in different events and career fairs to recruit candidates. The job requires good communication skills and teamwork.}\\
 		\\
-		
+
 		\textsc{Aug 2016}	&	\textbf{Junior Developer}\\
 		\textsc{Jun 2016}	&	isMobile\\
 		&	{\small Summer job. Worked with developing a demo suite for their Android Application Module. Primarily used XSLT, HTML, JavaScript, Java and LaTeX}	\\
-		
-		
+
+
 	\end{tabular}
-	
+
 	%Section: Languages
 	\section{Languages}
 	\begin{tabular}{Dl}
 		\textsc{Swedish:}&Mother tongue\\
 		\textsc{English:}&Fluent\\
 	\end{tabular}
-	
+
 	\section{Computer Skills}
 	\def\arraystretch{1.2}%  Vertical space between tabs. 1 is the default
 	\begin{tabu}to \textwidth{r X[c] X[c] X[c] X[c] X[c]}
-		\textsc{Traditional Languages:}		&	C/++/\#		&   Java	&	Python	&   Go! &		\\
-		\textsc{Web Development:}		    &   JavaScript	&	HTML	&	PHP		&	MySQL    &  CSS	\\
-		\textsc{Other:}				        &	LaTeX		&   Git	    &   Haskell &   Prolog   &  	\\
-		\textsc{Environments:}		        &	OpenGL		&	Android	&   Unity		&	3ds Max	&	Unix	\\
+		\textsc{Traditional Languages:}		&	C/++/\#		&   JavaScript	&	Python	&   Go &	Java	\\
+		\textsc{Web Development:}		    &  	HTML	&	PHP		&	MySQL    &  CSS	 & \\
+		\textsc{Other:}				        &	LaTeX		&   Git	    &   Haskell &   Prolog   &  Bash	\\
+		\textsc{Environments:}		        &	OpenGL		&	Android	&   Unity		&	3ds Max	&	Unix-like	\\
 	\end{tabu}
 	\\[0.cm]
-	
+
 	\centering\textsc{ References available upon request}
-	
+
 \end{document}
