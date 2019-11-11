@@ -1,6 +1,6 @@
 \documentclass[a4paper,10pt]{article}
 
-\usepackage[bottom=0cm, top=2.5cm]{geometry}
+\usepackage[bottom=0cm, top=2.5cm]{geometry} %, left=3cm, right=3cm
 
 %A Few Useful Packages
 \usepackage{marvosym}
@@ -23,7 +23,7 @@
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
-\newcolumntype{D}{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{1.51cm}}
+\newcolumntype{D}{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{1.53cm}}
 
 \usepackage{tabu} %For allocating remaining column space evenly
 
@@ -67,7 +67,7 @@ ItalicFont = Fontin-Italic.otf
 		\textsc{Address:}	&	 Vänortsvägen 5, Luleå, Sweden \\
 		\textsc{Phone:}		&	 +46 73 763 87 77\\
 		\textsc{email:}		&	 \href{mailto:Claes.Gustaf.Andersson@gmail.com}{Claes.Gustaf.Andersson@gmail.com}\\
-		\textsc{Linkedin:}	&	 \href{https://linkedin.com/in/ClaesGustaf}{linkedin.com/in/ClaesGustaf} \\
+		\textsc{LinkedIn:}	&	 \href{https://linkedin.com/in/ClaesGustaf}{linkedin.com/in/ClaesGustaf} \\
 		\textsc{GitHub:}		&	 \href{https://github.com/Fizzr}{GitHub.com/Fizzr}
 	\end{tabular}
 
@@ -92,7 +92,7 @@ ItalicFont = Fontin-Italic.otf
 
 		\emph{Current}	&	\textbf{Software Developer}		\\
 		\textsc{Jun 2017}	&	Mobilaris Mining and Civil Engineering	\\
-		&	{\small Started as a summer job developing a POC for a cross-platform mobile version of the existing underground positioning system. Running on native C++ on an Android tablet and using OpenGL the POC ran smoother and was more responsive than the existing desktop version. After the summer job and POC was completed the project was assigned a team of seven people, made into a product and considered the company's highest priority. I was kept on working part time while completing my studies. The same company where I conduct my Master Thesis.}\\
+		&	{\small Started as a summer job developing a POC for a cross-platform mobile version of the existing underground positioning system. Running on native C++ on an Android tablet and using OpenGL the POC ran smoother and was more responsive than the existing desktop version. After the summer job and POC was completed the project was assigned a team of seven people, made into a product and considered the company's highest priority. I was kept on working part time while completing my studies. Did my Master Thesis at Mobilaris, in which mine traffic is predicted by processing millions of logs. Mainly using C++ and CMake, some Python, and LaTeX. After completion I worked on a new POC of displaying a heatmap of data in the mine map using Unity, which also quickly became an important product.}\\
 		\\
 
 		\textsc{Oct 2018}	&	\textbf{Co-founder}		\\
@@ -114,20 +114,19 @@ ItalicFont = Fontin-Italic.otf
 
 	%Section: Languages
 	\section{Languages}
-	\begin{tabular}{Dl}
-		\textsc{Swedish:}&Mother tongue\\
-		\textsc{English:}&Fluent\\
+	\begin{tabular}{R{2cm} C{2cm} C{2cm}}
+		\textsc{Fluent:}	& Swedish	& English\\
 	\end{tabular}
 
 	\section{Computer Skills}
 	\def\arraystretch{1.2}%  Vertical space between tabs. 1 is the default
-	\begin{tabu}to \textwidth{r X[c] X[c] X[c] X[c] X[c]}
-		\textsc{Traditional Languages:}		&	C/++/\#		&   JavaScript	&	Python	&   Go &	Java	\\
-		\textsc{Web Development:}		    &  	HTML	&	PHP		&	MySQL    &  CSS	 & \\
-		\textsc{Other:}				        &	LaTeX		&   Git	    &   Haskell &   Prolog   &  Bash	\\
-		\textsc{Environments:}		        &	OpenGL		&	Android	&   Unity		&	3ds Max	&	Unix-like	\\
+	\begin{tabu}{R{2cm} X[c] X[c] X[c] X[c] X[c]}
+		\textsc{Languages:}		&	C++		& C\#		&   JavaScript	&	Python	&   Go 	\\
+								&	Bash	&   Haskell	&	Java 	&	Prolog \\
+		\textsc{Other:}			&	LaTeX	&   Git		&	OpenGL		& 	Unity	&	Linux\\
+				        		&	CMake	&	Android	&	Blender &	3ds Max		\\
 	\end{tabu}
-	\\[0.cm]
+	\vspace{0.1cm}
 
 	\centering\textsc{ References available upon request}
 
